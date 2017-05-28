@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Shopping Site</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.5/waypoints.min.js"></script>
+	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>	
+</head>
+<body>
+	<div class="body">
+		<div class="homepage">
+			<div style="position: relative;" class="nav anim5">
+				<a href="#home">Home</a>
+				<a href="#about">About</a>
+				<a href="#events">Events</a>
+				<a href="minor.html" target="_blank">Stores</a>
+				<a href="#contact">Contact</a>
+				<a href="login.html" id="log" style="float: right;">Login</a>
+			</div>
+			<div class="first" id="home">	
+				<div class="first-section">
+					<h1 class="anim1" style="position: relative;">Shop With Us for Every Occasion</h1>
+					<a href="register.html">
+					<div class="get-connected">
+						<h1 style="position: relative;" class="anim4">Get Connected</h1>
+					</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="wrap" id="about">
+		<h1>About Us</h1>
+		<div class="left">
+			<img style="position: relative;" class="anim6" src="images/mall.jpg">
+		</div>
+		<div class="right">
+			<p class="anim" style="position: relative;">Brunswick Square is an indoor mall located in East Brunswick,New Jersey. Serving both East Brunswick and even New York residents.Brunswick Square is easily accessible off of Route 18 near the Garden State Parkway and the New Jersey Turnpike.
+			<br><br>
+			With more than 65 retailers,including Macy's,JCPenney, Express, New York & Company, American Fagle Outfilters and Foot Locker, this East Brunswick mail is sure to have what you are looking for.
+			</p>
+			<h2 style="position: relative;" class="anim2">Brunswik Square has just what you need, For Every Occasion</h2>
+		</div>
+	</div>
+			<div class="event" id="events">
+			<h1>Events</h1>
+
+			<div class="ewrap" id="wraptop">
+
+				<div class="eleft">
+					<img style="position: relative;" class="anim6" src="images/event-eyecue.jpg">
+				</div>
+				<div  class="eright">
+					<p class="anim" style="position: relative;">
+						The Gardens Mall will host The Benjamin Schools student exhibition titled "Eye Cue" from May 15 to May 26 in the Blooming Dales Court. This is the 7th year The Gardens Mall has hosted the exhibition which displays the art work from The Benjamin School's 6th to 12th grade.			
+					</p>
+				</div>
+
+			</div>
+		    <div class="ewrap">	
+				<div class="eleft">
+					<img style="position: relative;" class="anim6" src="images/event.jpg">
+				</div>
+				<div class="eright">
+					<p class="anim" style="position: relative;" style:"border=10px">
+						The Gardens Mall will host The Benjamin Schools student exhibition titled "Eye Cue" from May 15 to May 26 in the Blooming Dales Court. This is the 7th year The Gardens Mall has hosted the exhibition which displays the art work from The Benjamin School's 6th to 12th grade.			
+					</p>
+				</div>
+			</div>
+		    <div class="ewrap">
+				<div class="eleft">
+					<img style="position: relative;" class="anim6" src="images/event1.jpg">
+				</div>
+				<div class="eright">
+					<p class="anim" style="position: relative;">
+						The Gardens Mall will host The Benjamin Schools student exhibition titled "Eye Cue" from May 15 to May 26 in the Blooming Dales Court. This is the 7th year The Gardens Mall has hosted the exhibition which displays the art work from The Benjamin School's 6th to 12th grade.			
+					</p>
+				</div>
+			</div>
+		</div>
+	<div class="footer-page" id="contact">
+		<div class="footer">
+			<div  class="l">
+				<h2 style="position: relative;" class="anim3">CONTACT US</h2>
+				<h3 style="position: relative;" class="anim3">+07312559247
+				<br>OR
+				<br><a style="position: relative;" class="anim3" href="mailto:bruswickmall@gmail.com">brunswickmall@gmail.com</a>
+				</h3>
+			</div>
+			<div  class="c">
+				<h2 style="position: relative;" class="anim3">ADDRESS</h2>
+				<h3 style="position: relative;" class="anim3">101 The Amazing Road <br>Premier Bulding<br> Manchester 411010</h3>
+			</div>
+			<div  class="r">
+				<h2 style="position: relative;" class="anim3">FOLLOW US</h2>
+				<a style="position: relative;" class="anim3" href=""><img src="images/insta.png" style="width: 44px; margin-left: 16px; margin-top: 11px;"></a>
+			</div>
+		</div>
+	</div>
+	<script>
+	$(document).ready(function(){
+		$('.anim1').delay("slow").addClass("slide");
+		$('.anim4').delay("slow").addClass("slideUp");
+		$('.anim5').delay("slow").addClass("slideUp1");
+		$(window).scroll(function() {
+			$('.anim').each(function(){
+			var imagePos = $(this).offset().top;
+			console.log(imagePos);
+			var topOfWindow = $(window).scrollTop();
+			console.log(topOfWindow);
+				if (imagePos < topOfWindow+350) {
+					$(this).addClass("slide");
+				}
+			});
+
+			$('.anim6').each(function(){
+			var imagePos = $(this).offset().top;
+			console.log(imagePos);
+			var topOfWindow = $(window).scrollTop();
+			console.log(topOfWindow);
+				if (imagePos < topOfWindow+350) {
+					$(this).addClass("slideIn");
+				}
+			});
+
+			$('.anim2').each(function(){
+			var imagePos = $(this).offset().top;
+			console.log(imagePos);
+			var topOfWindow = $(window).scrollTop();
+			console.log(topOfWindow);
+				if (imagePos < topOfWindow+450) {
+					$(this).addClass("slideUp");
+				}
+			});
+
+			$('.anim3').each(function(){
+			var imagePos = $(this).offset().top;
+			console.log(imagePos);
+			var topOfWindow = $(window).scrollTop();
+			console.log(topOfWindow);
+				if (imagePos < topOfWindow+600) {
+					$(this).addClass("slideUp");
+				}
+			});
+		});
+	});
+	</script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script>
+		$(document).ready(function(){
+		  // Add smooth scrolling to all links
+		  $(".nav a").on('click', function(event) {
+
+		    // Make sure this.hash has a value before overriding default behavior
+		    if (this.hash !== "") {
+		      // Prevent default anchor click behavior
+		      event.preventDefault();
+
+		      // Store hash
+		      var hash = this.hash;
+
+		      // Using jQuery's animate() method to add smooth page scroll
+		      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+		      $('html, body').animate({
+		        scrollTop: $(hash).offset().top
+		      }, 800, function(){
+		   
+		        // Add hash (#) to URL when done scrolling (default click behavior)
+		        window.location.hash = hash;
+		      });
+		    } // End if
+		  });
+		});
+		</script>
+</body>
+</html>

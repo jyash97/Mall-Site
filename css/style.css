@@ -1,0 +1,294 @@
+body,h1,p{
+	margin: 0px;
+}
+
+.homepage{
+	background-image: url(../images/background1.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	padding-bottom: 1vw;
+	background-attachment: fixed;
+}
+.homepage h1{
+	color: white;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.nav{
+	background-color: rgba(144,114,84,.23);
+	overflow: hidden;
+	padding-left: 20px;
+}
+
+.nav a{
+	font-family: 'Open Sans', sans-serif;
+	text-decoration: none;
+	color: white;
+	outline: none;
+	padding: 7px 20px;
+	padding-bottom: 13px;
+	font-size: 21px;
+	font-weight: bold;
+	float: left;
+	display: block;
+}
+
+a{
+	text-decoration: none;
+}
+
+#log{
+	margin-right: 1vw;
+	border:.1vw white solid;
+	padding: 5px 10px;
+	margin-top: .3vw;
+}
+
+.first{
+	width: 100%;
+	padding-top: 5vw;
+	background-color: rgba(144,114,84,.1);
+    padding-bottom: 4.75vw;
+}
+
+.first-section{
+	margin:auto; 
+	width: 44%;
+	padding: .5vw;
+	background-color: rgba(255,255,255,.1);
+	font-family: 'Lobster', cursive;
+	font-weight: 500;
+	text-align: center;
+	font-size: 45px;
+	color: white;
+}
+
+.get-connected{
+	background: rgba(255,255,255,.1);
+	margin-left: auto;
+	margin-right: auto;
+	width: 40%;
+	margin-top: 1.45vw;
+	font-family: 'Lobster', cursive;
+	font-size: 20px;
+	font-weight: 100;
+	padding: 10px;
+	color: white;
+	text-align: center;
+	line-height: 0.9;
+	border:white solid .1vw;
+    margin-bottom: 2vw;
+}
+.wrap{
+	width: 75%;
+	font-family: 'Lobster', cursive;
+	overflow: hidden;
+	margin-right:auto;
+	margin-left: auto;
+}
+
+.wrap img{
+	max-width: 100%;
+	max-height:100%;
+}
+
+.wrap h2{
+	font-family: 'Lobster', cursive;
+	font-size: 2vw;
+	text-align: center;
+}
+
+p{	
+	padding-left: .8vw;
+}
+
+.wrap h1{
+	margin-top: 1.5vw;
+	margin-bottom: 1vw;
+	text-align: center;
+	font-size: 3.1vw;
+}
+
+.left{
+	width: 30%;
+	float: left;
+	word-wrap: break-word;
+}
+
+.right{
+	width: 70%;
+	font-size: 1.8vw;
+	font-family: 'Source Sans Pro',sans-serif;
+	float: left;
+}
+
+
+.l{
+	width: 33%;
+	float: left;
+}
+
+.c{
+	width: 33%;
+	float: left;
+
+}
+
+.r{
+	width: 34%;
+	float: left;
+}
+
+.event{
+		margin-top: 1.45vw;
+		margin-bottom: 4vw;
+		text-align: center;
+		overflow: hidden;
+		font-size: 1.7vw;
+		font-family: 'Lobster', cursive;
+	}
+
+.ewrap{
+	width: 70%;
+	border-bottom: 2px solid;
+	border-right: 2px solid;
+	text-align: left;
+	margin-left: auto;
+	margin-right: auto;
+	border-left: 2px solid;
+	overflow: hidden;
+	height: 100%;
+        
+}
+
+.eleft{
+	width: 28%;
+	float: left;
+	border-right: 2px solid;
+	padding-bottom: 5.5vw;
+	word-wrap: break-word;
+}
+
+.eright{
+	width: 69%;
+	float: left;
+	padding-left: .4vw;
+}
+
+.eleft img{
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.eright p{
+	margin: 0px;
+	padding-top: 1vw;
+    padding-bottom:1vw;
+	font-size: 1.8vw;
+	font-family:'Source Sans Pro', sans-serif; 
+}
+
+#wraptop{
+	border-top: 2px solid;
+}
+
+.footer{
+	width: 100%;
+	overflow: hidden;
+	background-color: rgba(255,255,255,.2);
+}
+
+.footer h3{
+	font-size: 1.7vw;
+	margin-left: 8px;
+	color: black;
+	margin-bottom: 2vw;
+	padding-left: 1.5vw;
+}
+
+.footer h2{
+	background-color: rgba(0,0,0,0.4);
+	color: white;
+	font-size: 2 vw;
+	padding-left: 2.2vw;
+}
+
+.footer-page{
+	width: 100%;
+	font-family:  'Source Sans Pro',sans-serif;
+	overflow: hidden;
+	background-image: url("../images/contact.jpg");
+	background-color: rgba(255,255,255,1);
+	background-size: 100%;
+}
+
+.footer a{
+	text-decoration: none;
+	color: black;
+}
+
+.anim1,.anim,.anim2,.anim3,.anim4,.anim5,.anim6{
+		opacity: 0;
+
+	}
+
+	.slide{
+		animation: let 1s ease-in-out forwards;
+		opacity: 1;
+		transition: opacity 1s ease-in-out forwards;
+	}
+
+	.slideUp{
+		animation: let1 1s ease-in-out forwards;
+		opacity: 1;
+		transition: opacity 1s ease-in-out forwards;
+	}
+
+	.slideUp1{
+		animation: let2 1s ease-in-out forwards;
+		opacity: 1;
+		transition: opacity 1s ease-in-out forwards;
+	}
+
+	.slideIn{
+		animation: let3 1s ease-in-out forwards;
+		opacity: 1;
+		transition: opacity 1s ease-in-out forwards;
+	}
+
+	@keyframes let{
+		from{
+			right:-800px 
+		}
+		to{
+			right: 0px;
+		}
+	}
+
+	@keyframes let1{
+		from{
+			top: 200px
+		}
+		to{
+			top: 0px;
+		}
+	}
+
+	@keyframes let2{
+		from{
+			top: -200px
+		}
+		to{
+			top: 0px;
+		}
+	}
+
+	@keyframes let3{
+		from{
+			right: 800px
+		}
+		to{
+			right: 0px;
+		}
+	}
